@@ -1,0 +1,49 @@
+[
+    {
+        "case": "Cas Normal",
+        "tests": [
+            {
+                "args": [{ "value": 1, "type": "int" }],
+                "expectedReturns": [{ "value": 2, "type": "int" }]
+            },
+            {
+                "args": [{ "value": 5, "type": "int" }],
+                "expectedReturns": [{ "value": 6, "type": "int" }]
+            },
+            {
+                "args": [{ "value": 0, "type": "int" }],
+                "expectedReturns": [{ "value": 1, "type": "int" }]
+            }
+        ]
+    },
+    {
+        "case": "Cas Limites",
+        "tests": [
+            {
+                "args": [{ "value": -1, "type": "int" }],
+                "expectedReturns": [{ "value": 0, "type": "int" }]
+            },
+            {
+                "args": [{ "value": 9999999999999999999999999, "type": "int" }],
+                "expectedReturns": [{ "value": 10000000000000000000000000, "type": "int" }]
+            }
+        ]
+    },
+    {
+        "case": "Cas Erreur",
+        "tests": [
+            {
+                "args": [{ "value": 1, "type": "int" }],
+                "expectedReturns": [{ "value": 1, "type": "int" }]
+            },
+            {
+                "args": [{ "value": 5, "type": "int" }],
+                "expectedReturns": [{ "value": 6, "type": "int" }]
+            },
+            {
+                "args": [{ "value": 0, "type": "int" }],
+                "expectedReturns": [{ "value": 1, "type": "int" }]
+            }
+        ]
+    }
+]
